@@ -24,4 +24,14 @@
         android:text="@string/c300"
         android:textSize="18sp"
         android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvC322"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="@string/C322"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
 </LinearLayout>

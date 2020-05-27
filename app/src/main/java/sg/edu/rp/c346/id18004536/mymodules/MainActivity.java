@@ -11,6 +11,7 @@ public class MainActivity extends AppCompatActivity {
 
     TextView tvC346pass;
     TextView tvC300pass;
+    TextView tvC322pass;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
         tvC346pass = findViewById(R.id.tvC346);
         tvC300pass = findViewById(R.id.tvC300);
+        tvC322pass = findViewById(R.id.tvC322);
 
         tvC346pass.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -39,5 +41,16 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        tvC322pass.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,SecondActivity.class);
+                String C322text = "Module code: C322 \n \n Module Name: Data Center and Cloud Management \n \n Academic year: 2020 \n \n Semester: 1 \n \n Module Credit: 4 \n \n Venue: W66E";
+                intent.putExtra("Value",C322text);
+                startActivity(intent);
+            }
+        });
+
     }
 }
